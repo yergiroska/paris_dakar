@@ -1,0 +1,85 @@
+* {
+    /*box-sizing: border-box;*/
+}
+
+/*body {
+    padding: 1em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #333;
+}*/
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+h4 {
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
+
+.row {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    /*gap: 1em;*/
+    /*justify-content: center;*/
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 0.3em; /* Reduced padding to decrease height */
+    /* width: calc(33.333% - 1em); Ensuring three columns layout */
+    transition: border-color 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.input-group .input-icon {
+    margin-right: 0.5em;
+    color: #999;
+    font-size: 1.2em; /* Adjust font size for better alignment */
+}
+
+.input-group input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+    padding: 0.3em; /* Reduced padding to decrease height */
+    font-size: 1em;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.input-group input:focus {
+    outline: none;
+}
+
+.input-group:focus-within {
+    border-color: #f0a500;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        width: calc(50% - 1em);
+    }
+}
+
+@media (max-width: 540px) {
+    .input-group {
+        width: 100%;
+    }
+}

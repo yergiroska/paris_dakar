@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Paris-Dakar</title>
+    <link href="assets/styles/estilo.css" rel="stylesheet">
+    <link href="assets/styles/card.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/font-awesome.css">
+    <link rel="stylesheet" href="assets/styles/form.css">
+
+</head>
+<body>
+<div id="visor">
+    <h1>PARIS - DAKAR</h1>
+    <div>
+        <img alt="Imagen" id="imagen" src="assets/images/dakar1.png">
+    </div>
+    <div class="botones">
+        <button class="boton" onclick="retroceso_todo();"><i class="fa fa-angle-double-left" aria-hidden="true"></i></button>
+        <button class="boton" onclick="cargaImagen('-');"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
+        <button class="boton" onclick="cargaImagen('+');"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        <button class="boton" onclick="avance_todo();"><i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="header">
+        <p id="count-fotografos"></p>
+        <p id="count-ayudantes"></p>
+        <p id="coches" ></p>
+    </div>
+    <div class="content">
+        <div class="row element-to-hide" id="div-fotografo">
+            <div class="column" id="form-fotografos">
+                <div id="fotografos"></div>
+                <div class="row" id="botton"></div>
+                <div class="row" id="print-acreditacion" style="padding-top:20px;"></div>
+            </div>
+        </div>
+        <div class="row" id="div-credenciales"></div>
+        <div class="row" id="show-fotografos">
+            <div class="column" id="btn-show-fotografo">
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
